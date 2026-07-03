@@ -1,40 +1,37 @@
-# Clone receipt
+# Clone-of-clone receipt
 
-Date: 2026-07-02
+Date: 2026-07-02 America/Los_Angeles
 
 ## Source
 
-- Repository: `nothinginfinity/repo-copilot`
-- Path: `apps/afo-link-lane/`
+- Repository: `nothinginfinity/afo-link-lane-v235-command-center-lab`
 - Source ref: `main`
-- Source commit: `274ffd35e4e37f3e1f90c868f0bc21e0b57d3c56`
+- Source commit: `b96b167ea2f5e329d9d8137ac1d9f4942526c955`
 
 ## Destination
 
-- Repository: `nothinginfinity/afo-link-lane-v235-lab-2-2`
+- Repository: `nothinginfinity/afo-link-lane-v235-lab-2`
 - Branch: `main`
-- App path: `apps/afo-link-lane/`
 
 ## Clone session
 
 - Tool: `AFO_gitZip_Clone_👥`
-- Session ID: `gs_mr43w7m8_j75a28`
-- Planned files: 4
-- Planned bytes: 85,911
+- Session ID: `gs_mr4acr4f_rx6xlh`
+- Planned files: 11
+- Planned bytes: 74,434
 - Batch count: 1
-- Clone commit: `e5e58ddc49667aaea4ff8560988a09a26f7b87e2`
+- Clone commit: `716fd15ab47d4ee0c4e41af10b40f7538bf83c8d`
+- Verification verdict: PASS, all 11 files accounted for
 
-## Follow-up commits
+## Replacements applied
 
-- Isolated `wrangler.jsonc` lab bindings: `09838a46ecda4a72f3057c8c9981478b2d443054`
-- Marked package as v2.3.5 lab: `ebcc2a3592b9c95441f9206b213095088025dc06`
-- Added repo README safety note: `16d35940a146f646b93a3fbe21c3bc59ce5c0094`
-- Added app `.gitignore`: `1345babb35d56d5dbeb3b9a353303ce750a859c5`
-- Added workflow isolation note: `d179d6e3e4cc74c43053d002b939f154c94d1ae0`
-- Synced package lock metadata: `ff18c5254fd93ae1ae4b7fdbc44d175147476f09`
-- Added app safety checklist: `7c1d439556e996990ac7d2a6f0e63e7fa7587659`
+- `afo-link-lane-v235-command-center-lab` → `afo-link-lane-v235-lab-2`
+- `afo-link-lane-v235-lab` → `afo-link-lane-v235-lab-2`
+- `afo-link-lane-v235-lab-db` → `afo-link-lane-v235-lab-2-db`
+- `00b999a1-d637-45ee-9720-f90411cabb65` → `c0253996-9e04-4a05-99b2-7fc6a3f0111c`
+- `afo-link-lane-v235-lab-content` → `afo-link-lane-v235-lab-2-content`
 
-## Lab resources
+## Lab-2 resources
 
 - Worker target: `afo-link-lane-v235-lab-2`
 - D1 database: `afo-link-lane-v235-lab-2-db`
@@ -45,5 +42,7 @@ Date: 2026-07-02
 
 - Production repo was not patched.
 - Production Worker `afo-link-lane` was not touched.
-- Production D1/R2 bindings were not retained in the lab config.
+- Production D1/R2 resources were not touched.
+- Lab-1 Worker `afo-link-lane-v235-lab` remains separate.
+- Lab-1 D1/R2 resources were not reused by lab 2.
 - No deploy workflow was enabled.

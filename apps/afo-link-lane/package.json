@@ -1,0 +1,14 @@
+{
+  "name": "afo-link-lane-v235-lab-2",
+  "version": "2.3.5-lab.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev worker.js",
+    "deploy": "wrangler deploy",
+    "check": "node --check worker.js"
+  },
+  "devDependencies": {
+    "wrangler": "latest"
+  }
+}

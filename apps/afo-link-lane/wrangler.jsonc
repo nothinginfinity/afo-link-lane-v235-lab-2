@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "afo-link-lane-v235-lab-2",
+  "main": "worker.js",
+  "compatibility_date": "2026-05-31",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "afo-link-lane-v235-lab-2-db",
+      "database_id": "c0253996-9e04-4a05-99b2-7fc6a3f0111c"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "BUCKET",
+      "bucket_name": "afo-link-lane-v235-lab-2-content"
+    }
+  ]
+}
